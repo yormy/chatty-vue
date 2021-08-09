@@ -118,3 +118,8 @@ export default {
   },
 };
 </script>
+<style>
+.v-application--wrap {
+  min-height: inherit !important;
+}
+</style>
