@@ -1,0 +1,22 @@
+{
+  "ok": "OK",
+  "delete": "Verwijder",
+  "add" : "Toevoegen",
+  "cancel" : "Annuleren",
+  "update" : "Update",
+  "activate" : "Activeren",
+  "save" : "Opslaan",
+  "search" : "Zoeken",
+  "select" : "Selecteer",
+  "login" : "Inloggen",
+  "logging_in" : "Bezig met inloggen...",
+  "logout" : "Uitloggen",
+  "view" : "Bekijk",
+  "request_change" : "Verzoek wijziging",
+  "confirm": "Bevestig",
+  "resend" : "Opnieuw versturen",
+  "next" : "Volgende",
+  "skip" : "Overslaan",
+  "impersonate" : "Voordoen als",
+  "resolve" : "Oplossen"
+}
