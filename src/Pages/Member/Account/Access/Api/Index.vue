@@ -65,13 +65,7 @@ export default {
   },
 
   props: {
-    // currentPlanId: String,
     accessTokens: Array,
-    // onGracePeriod: Boolean,
-    // planEndsAt: String,
-    // trialEndsAt: String,
-    // yearlyPlans: Array,
-    // discountEnabled: Boolean,
   },
 
 
