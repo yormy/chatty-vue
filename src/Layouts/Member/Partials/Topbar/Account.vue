@@ -48,6 +48,16 @@
           ></topbar-dropdown-item>
         </rbac-link-top>
 
+        <div v-if="member.allowApiKeys">
+          <rbac-link-top :user="member" route-name="member.account.access.api.index">
+            <topbar-dropdown-item
+              :description="$t('menu.user.account.access.api.description')"
+              :title="$t('menu.user.account.access.api.title')"
+              icon="fal fa-mailbox"
+            ></topbar-dropdown-item>
+          </rbac-link-top>
+        </div>
+
         <div v-if="config.billingEnabled">
           <rbac-link-top :user="member" route-name="member.account.billing.index">
             <topbar-dropdown-item
