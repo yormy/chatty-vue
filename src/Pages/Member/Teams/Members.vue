@@ -2,7 +2,6 @@
   <div class="container mw-100">
     <div class="card">
       <div class="card-body">
-        {{ members }}==
         <team-members-index
           :invites="invites"
           :members="members"
