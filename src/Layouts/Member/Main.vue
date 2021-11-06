@@ -1,7 +1,6 @@
 <template>
   <div>
     <auto-logout v-if="config.autologoutEnabled" logged-in-as="MEMBER"></auto-logout>
-
     <div class="container-scroller">
       <topbar></topbar>
       <div class="container-fluid page-body-wrapper">
@@ -14,9 +13,10 @@
             <v-app>
               <div style="min-height: auto !important; width: inherit">
                 <impersonated-spacer></impersonated-spacer>
+                <actions-required></actions-required>
                 member-layout == topbar vue You are logged in as
                 <!--                <sidebar-mini></sidebar-mini>-->
-                <breadcrumb></breadcrumb>
+                <breadcrumb :breadcrumbs="breadcrumbs"></breadcrumb>
 
                 <br />
                 <slot />
@@ -38,6 +38,7 @@ import Sidebar from './Partials/Sidebar.vue';
 import FooterBar from './Partials/FooterBar.vue';
 import Breadcrumb from './Partials/Breadcrumb.vue';
 import ImpersonatedSpacer from "./Partials/ImpersonatedSpacer.vue";
+import ActionsRequired from "./Partials/ActionsRequired.vue";
 // import SidebarMini from './Partials/SidebarMini.vue';
 
 export default {
@@ -48,8 +49,20 @@ export default {
     TopWarningsSpacer,
     Sidebar,
     FooterBar,
+    ActionsRequired
     // SidebarMini,
   },
+
+  props: {
+    breadcrumbs: {
+      type: Array,
+      required: false,
+      default() {
+        return []
+      }
+    },
+  },
+
   data() {
     return {
       config: this.$page.props.shared.config,
