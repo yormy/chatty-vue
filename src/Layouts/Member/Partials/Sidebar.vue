@@ -21,9 +21,11 @@
                 <span class="menu-title">{{ $t('menu.user.projects.title') }}</span>
               </rbac-link-sidebar>
             </div>
+          </div>
 
+          <div class="nav-item">
             <div class="nav-link">
-              <rbac-link-sidebar :user="member" route-name="member.multilingual.projects.index">
+              <rbac-link-sidebar :user="member" route-name="member.teams.index">
                 <i class="menu-icon fal fa-users menu-icon"></i>
                 <span class="menu-title">{{ $t('menu.user.teams.title') }}</span>
               </rbac-link-sidebar>
