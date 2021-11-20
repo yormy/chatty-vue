@@ -39,7 +39,8 @@
 
         <div class="item--add__floating">
           <Link :href="route('member.items.create', { group_xid: group.xid })">
-            <img :src="images.app.plus_icon" height="60px"/>
+            <!--            <img :src="images.app.plus_icon" height="60px"/>-->
+            <img height="60px" src="/shared/images/modules/chatty/plus.png"/>
           </Link>
         </div>
       </div>
