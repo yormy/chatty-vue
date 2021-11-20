@@ -33,8 +33,10 @@ import Topbar from './Partials/Topbar.vue';
 import TopWarningsSpacer from './Partials/TopWarningsSpacer.vue';
 import Sidebar from './Partials/Sidebar.vue';
 import FooterBar from './Partials/FooterBar.vue';
+import {AutoLogout} from "bedrock-users-vue";
 // import Breadcrumb from './Partials/Breadcrumb.vue';
 // import SidebarMini from './Partials/SidebarMini.vue';
+
 
 export default {
   components: {
@@ -42,6 +44,7 @@ export default {
     Topbar,
     Sidebar,
     FooterBar,
+    AutoLogout
     // Breadcrumb,
     // SidebarMini,
   },

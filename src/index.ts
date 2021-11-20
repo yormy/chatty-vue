@@ -6,6 +6,8 @@ import LayoutMemberLogin from "./Layouts/Member/Login.vue";
 import LayoutMemberMain from "./Layouts/Member/Main.vue";
 import LayoutMemberRight from "./Layouts/Member/Right.vue";
 
+import Settings from "./Components/Chatty/Settings/Settings.vue";
+
 import 'quill/dist/quill.core.css'
 import 'quill/dist/quill.snow.css'
 import 'quill/dist/quill.bubble.css'
@@ -17,4 +19,5 @@ export {
   LayoutMemberLogin,
   LayoutMemberMain,
   LayoutMemberRight,
+  Settings
 };
