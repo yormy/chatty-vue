@@ -30,10 +30,14 @@
           <!--          <Link :href="route('groups.edit', group.xid)">-->
           <!--            <i class="fas fa-edit" style="font-size:0.5rem"></i>&ndash;&gt;-->
           <!--          </Link>-->
+
+          <div @click="toggleEditItems">
+            Edit Items <span class="fal fa-edit"></span>
+          </div>
         </div>
         <div class="d-flex align-content-start items flex-wrap">
           <div v-for="item in group.items" :key="item.xid">
-            <item :item="item"></item>
+            <item :editItem="editItem" :item="item"></item>
           </div>
         </div>
 
@@ -65,8 +69,15 @@ export default {
   data() {
     return {
       images: this.$page.props.shared.images,
+      editItem: false
     };
   },
+
+  methods: {
+    toggleEditItems() {
+      this.editItem = !this.editItem;
+    }
+  }
 };
 </script>
 

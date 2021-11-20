@@ -11,7 +11,8 @@
 
         <div>
           <strong>{{ item.title }}</strong>
-          <Link :href="route('member.items.edit', item.xid)"><i class="fas fa-edit"></i></Link>
+          <Link v-if="editItem" :href="route('member.items.edit', item.xid)"><i
+            class="fas fa-edit"></i></Link>
         </div>
       </div>
       <div class="card-body">
@@ -54,6 +55,9 @@
 export default {
   props: {
     item: Object,
+    editItem: {
+      Type: Boolean
+    }
   },
 
   methods: {
