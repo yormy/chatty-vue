@@ -39,6 +39,8 @@ import FooterBar from './Partials/FooterBar.vue';
 import Breadcrumb from './Partials/Breadcrumb.vue';
 import ImpersonatedSpacer from "./Partials/ImpersonatedSpacer.vue";
 import ActionsRequired from "./Partials/ActionsRequired.vue";
+import {AutoLogout} from "bedrock-users-vue";
+
 // import SidebarMini from './Partials/SidebarMini.vue';
 
 export default {
@@ -49,7 +51,8 @@ export default {
     TopWarningsSpacer,
     Sidebar,
     FooterBar,
-    ActionsRequired
+    ActionsRequired,
+    AutoLogout
     // SidebarMini,
   },
 
