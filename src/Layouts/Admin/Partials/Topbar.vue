@@ -6,7 +6,7 @@
       <div class="d-flex">
         <div class="navbar nav-item brand-logo">
           <Link :class="'nav-link'" :href="route('admin.home')">
-            <img :src="logo.white.size48x48" alt="logo" />
+            <img :src="images.logos.white.size48x48" alt="logo"/>
           </Link>
         </div>
 
@@ -85,7 +85,7 @@ export default {
 
   data() {
     return {
-      logo: this.$page.props.shared.images.logo,
+      images: this.$page.props.shared.images,
       admin: this.$page.props.shared.admin,
       app: this.$page.props.shared.app,
     };

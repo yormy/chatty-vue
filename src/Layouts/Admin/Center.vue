@@ -7,7 +7,7 @@
             <div class="col-12 px-0 py-0 banner-section align-items-stretch justify-content-center">
               <!-- eslint-disable-->
               <div
-                :style="`background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('${background.login}')no-repeat top fixed; -webkit-background-size: cover;-moz-background-size: cover; -o-background-size: cover;background-size: cover;`"
+                :style="`background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('${images.admin.background.login}')no-repeat top fixed; -webkit-background-size: cover;-moz-background-size: cover; -o-background-size: cover;background-size: cover;`"
                 class="
                   auto-form-wrapper
                   landing-half-wrapper-image
@@ -26,9 +26,9 @@
                         </div>
                         <div class="text-center">
                           <span class="db">
-                            <img :src="logo.transparant.size96x96" alt="logo" />
-                            <br />
-                            <img :src="logo.text" alt="logo" />
+                            <img :src="images.logos.transparant.size96x96" alt="logo"/>
+                            <!--                            <br />-->
+                            <!--                            <img :src="logo.text" alt="logo" />-->
                           </span>
                         </div>
 
@@ -59,8 +59,7 @@ export default {
   data() {
     return {
       switch1: true,
-      background: this.$page.props.shared.images.background,
-      logo: this.$page.props.shared.images.logo,
+      images: this.$page.props.shared.images,
     };
   },
 };

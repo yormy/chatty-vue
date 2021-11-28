@@ -10,7 +10,7 @@
               <!-- eslint-disable-->
               <div
                 ref="background"
-                :style="`background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('${background.login}') no-repeat top fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;`"
+                :style="`background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('${images.member.background.login}') no-repeat top fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;`"
                 class="
                   landing-half-wrapper-image
                   d-flex
@@ -83,9 +83,9 @@
               >
                 <div class="text-center">
                   <span class="db">
-                    <img :src="logo.transparant.size96x96" alt="logo" />
+                    <img :src="images.logos.transparant.size96x96" alt="logo"/>
                     <br />
-                    <img :src="logo.text" alt="logo" />
+                    <!--                    <img :src="images.logos.text.size96x96" alt="logo" />-->
                   </span>
                 </div>
                 <v-app>
@@ -110,8 +110,7 @@ export default {
 
   data() {
     return {
-      background: this.$page.props.shared.images.background,
-      logo: this.$page.props.shared.images.logo,
+      images: this.$page.props.shared.images,
       config: this.$page.props.shared.config,
       registration: this.$page.props.shared.registration,
     };

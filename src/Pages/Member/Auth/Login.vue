@@ -34,7 +34,7 @@ import {LoginWrapper} from 'bedrock-users-vue';
 import LayoutMemberLogin from '../../../Layouts/Member/Login';
 
 export default {
-  metaInfo: {title: 'Login1111'},
+  metaInfo: {title: 'Login Chatty'},
   layout: LayoutMemberLogin,
   components: {
     LoginWrapper,
