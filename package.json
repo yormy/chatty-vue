@@ -58,6 +58,7 @@
     "eslint-plugin-import": "^2.23.2",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.9.0",
+    "vue-toastification": "^1.7.14",
     "eslint-webpack-plugin": "^2.5.4",
     "rollup": "^2.48.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",

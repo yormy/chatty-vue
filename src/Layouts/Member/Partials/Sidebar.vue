@@ -14,15 +14,6 @@
             </div>
           </div>
 
-          <div class="nav-item">
-            <div class="nav-link">
-              <rbac-link-sidebar :user="member" route-name="member.projects.index">
-                <i class="menu-icon fal fa-project-diagram menu-icon"></i>
-                <span class="menu-title">{{ $t('menu.user.projects.title') }}</span>
-              </rbac-link-sidebar>
-            </div>
-          </div>
-
           <div v-for="menuItem in menu" :key="menuItem.xid" class="nav-item">
             <!--          {{ menuItem.xid }}-->
             <a class="nav-link" href="#">
