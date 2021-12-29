@@ -70,7 +70,7 @@ export default {
 
   data() {
     return {
-      member: this.$page.props.site.member,
+      member: this.$page.props.member.member,
       images: this.$page.props.site.images,
     };
   },

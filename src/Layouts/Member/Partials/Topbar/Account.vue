@@ -105,7 +105,7 @@
 export default {
   data() {
     return {
-      member: this.$page.props.site.member,
+      member: this.$page.props.member.member,
       config: this.$page.props.site.config,
     };
   },
