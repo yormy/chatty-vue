@@ -51,8 +51,8 @@ export default {
 
   data() {
     return {
-      branding: this.$page.props.shared.branding,
-      registration: this.$page.props.shared.registration,
+      branding: this.$page.props.site.branding,
+      registration: this.$page.props.site.registration,
     };
   },
 };

@@ -48,7 +48,7 @@ export default {
 
   data() {
     return {
-      branding: this.$page.props.shared.branding,
+      branding: this.$page.props.site.branding,
     };
   },
 };

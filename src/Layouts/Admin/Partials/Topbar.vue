@@ -85,9 +85,9 @@ export default {
 
   data() {
     return {
-      images: this.$page.props.shared.images,
-      admin: this.$page.props.shared.admin,
-      app: this.$page.props.shared.app,
+      images: this.$page.props.site.images,
+      admin: this.$page.props.site.admin,
+      app: this.$page.props.site.app,
     };
   },
 };

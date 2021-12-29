@@ -110,9 +110,9 @@ export default {
 
   data() {
     return {
-      images: this.$page.props.shared.images,
-      config: this.$page.props.shared.config,
-      registration: this.$page.props.shared.registration,
+      images: this.$page.props.site.images,
+      config: this.$page.props.site.config,
+      registration: this.$page.props.site.registration,
     };
   },
 };

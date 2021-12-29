@@ -68,7 +68,7 @@ export default {
 
   data() {
     return {
-      images: this.$page.props.shared.images,
+      images: this.$page.props.site.images,
       editItem: false
     };
   },

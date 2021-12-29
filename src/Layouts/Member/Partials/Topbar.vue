@@ -70,8 +70,8 @@ export default {
 
   data() {
     return {
-      member: this.$page.props.shared.member,
-      images: this.$page.props.shared.images,
+      member: this.$page.props.site.member,
+      images: this.$page.props.site.images,
     };
   },
 };

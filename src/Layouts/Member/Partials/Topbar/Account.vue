@@ -105,8 +105,8 @@
 export default {
   data() {
     return {
-      member: this.$page.props.shared.member,
-      config: this.$page.props.shared.config,
+      member: this.$page.props.site.member,
+      config: this.$page.props.site.config,
     };
   },
 };

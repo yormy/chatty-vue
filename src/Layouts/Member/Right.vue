@@ -74,8 +74,8 @@ export default {
   data() {
     return {
       switch1: true,
-      background: this.$page.props.shared.images.background,
-      logo: this.$page.props.shared.images.logo,
+      background: this.$page.props.site.images.background,
+      logo: this.$page.props.site.images.logo,
     };
   },
 };

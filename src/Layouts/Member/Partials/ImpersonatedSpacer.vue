@@ -8,7 +8,7 @@
 export default {
   data() {
     return {
-      impersonated: this.$page.props.shared.impersonated,
+      impersonated: this.$page.props.site.impersonated,
     };
   },
 };

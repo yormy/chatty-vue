@@ -21,7 +21,7 @@
 export default {
   data() {
     return {
-      confirmableActions: this.$page.props.shared.confirmableActions,
+      confirmableActions: this.$page.props.site.confirmableActions,
     };
   },
 };

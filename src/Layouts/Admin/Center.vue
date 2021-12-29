@@ -59,7 +59,7 @@ export default {
   data() {
     return {
       switch1: true,
-      images: this.$page.props.shared.images,
+      images: this.$page.props.site.images,
     };
   },
 };

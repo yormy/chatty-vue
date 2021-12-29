@@ -12,7 +12,7 @@
                    :style="`background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('${background.login}') no-repeat top fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;`"
                    class="landing-half-wrapper-image d-flex no-block justify-content-center align-items-center">
 
-                {{ $page.props.shared }}
+                {{ $page.props.site }}
                 <!--                <div class="main-view d-flex flex-column">-->
                 <!--                  <div style="height: 60%;" class="d-flex align-items-center">-->
                 <!--                    <div class="container h-100 d-flex justify-content-center">-->
@@ -78,8 +78,8 @@ export default {
   data() {
     return {
       switch1: true,
-      background: this.$page.props.shared.images.member.background,
-      logo: this.$page.props.shared.images.logo,
+      background: this.$page.props.site.images.member.background,
+      logo: this.$page.props.site.images.logo,
     };
   },
 };

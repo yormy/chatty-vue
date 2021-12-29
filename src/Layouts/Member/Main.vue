@@ -68,7 +68,7 @@ export default {
 
   data() {
     return {
-      config: this.$page.props.shared.config,
+      config: this.$page.props.site.config,
     };
   },
 };

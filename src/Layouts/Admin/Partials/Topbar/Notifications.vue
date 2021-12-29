@@ -58,8 +58,8 @@ export default {
 
   data() {
     return {
-      member: this.$page.props.shared.member,
-      topbarNotifications: this.$page.props.shared.notifications.topbar,
+      member: this.$page.props.site.member,
+      topbarNotifications: this.$page.props.site.notifications.topbar,
     };
   },
 
